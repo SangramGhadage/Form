@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formindiv</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+        }
+        #container{
+            width: 500px;
+            margin: auto;
+        }
+        input[type=text], input[type=email], 
+        input[type=image], input[type=file] ,
+        input[type=tel], input[type=date] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        label{
+            font-size: 21px;
+        }
+        .gender{
+            width: 60px;
+            padding-left: 10px;
+        }
+        .btn{
+            width: 35%;
+            height: 40px;
+            margin-top: 4px;
+            float: left;
+            margin: 10px;
+            margin-right: 10px;
+            /* background-color: black; */
+            color: black;
+            font-size: 25px;
+            border-radius: 40px;
+        }
+        .btn:hover{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" name="lastname" id="firstname" placeholder="Enter Your First Name">
+        </div> 
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+        </div>
+        <div class="form-group">
+            <p style="margin: 0; font-size: 23px;">select gender</p><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" class="gender" >
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" class="gender">
+        </div><br>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="photo">Upload Recent Passport size Color photo</label>
+            <input type="image" name="photo" id="photo" style="background-color: white;" required>
+        </div>
+        <div class="form-group">
+            <label for="photo">Preferred contact number</label>
+            <input type="tel" name="photo" id="photo" placeholder="Enter Your Contact Number" required>
+        </div>
+        <div class="form-group">
+            <label for="photo">Date of birth</label>
+            <input type="date" name="photo" id="photo" required>
+        </div>
+        <div class="form-group">
+            <label for="Resume">Upload Your Resume</label>
+            <input type="file" name="resume" id="resume" style="background-color: white;" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" class="btn">
+        </div>
+        <div class="form-group">
+            <input type="reset" name="reset" class="btn">
+        </div>
+        
+    </div>
+</body>
+</html>
